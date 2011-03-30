@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFDC06411343BFEF00303441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06401343BFEF00303441 /* UIKit.framework */; };
+		CFDC06431343BFEF00303441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06421343BFEF00303441 /* Foundation.framework */; };
+		CFDC06451343BFEF00303441 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06441343BFEF00303441 /* CoreGraphics.framework */; };
+		CFDC064B1343BFEF00303441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06491343BFEF00303441 /* InfoPlist.strings */; };
+		CFDC064E1343BFEF00303441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDC064D1343BFEF00303441 /* main.m */; };
+		CFDC06511343BFEF00303441 /* CounterBeansAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDC06501343BFEF00303441 /* CounterBeansAppDelegate.m */; };
+		CFDC06541343BFEF00303441 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06521343BFEF00303441 /* MainWindow.xib */; };
+		CFDC065B1343BFF000303441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06401343BFEF00303441 /* UIKit.framework */; };
+		CFDC065C1343BFF000303441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06421343BFEF00303441 /* Foundation.framework */; };
+		CFDC065D1343BFF000303441 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC06441343BFEF00303441 /* CoreGraphics.framework */; };
+		CFDC06651343BFF000303441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06631343BFF000303441 /* InfoPlist.strings */; };
+		CFDC06681343BFF000303441 /* CounterBeansTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06671343BFF000303441 /* CounterBeansTests.h */; };
+		CFDC066A1343BFF000303441 /* CounterBeansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDC06691343BFF000303441 /* CounterBeansTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFDC065E1343BFF000303441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFDC06331343BFEF00303441 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFDC063B1343BFEF00303441;
+			remoteInfo = CounterBeans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFDC063C1343BFEF00303441 /* CounterBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDC06401343BFEF00303441 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CFDC06421343BFEF00303441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFDC06441343BFEF00303441 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFDC06481343BFEF00303441 /* CounterBeans-Info.plist */ = {isa = PBXFileReference; path = "CounterBeans-Info.plist"; sourceTree = "<group>"; };
+		CFDC064A1343BFEF00303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFDC064C1343BFEF00303441 /* CounterBeans-Prefix.pch */ = {isa = PBXFileReference; path = "CounterBeans-Prefix.pch"; sourceTree = "<group>"; };
+		CFDC064D1343BFEF00303441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFDC064F1343BFEF00303441 /* CounterBeansAppDelegate.h */ = {isa = PBXFileReference; path = CounterBeansAppDelegate.h; sourceTree = "<group>"; };
+		CFDC06501343BFEF00303441 /* CounterBeansAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterBeansAppDelegate.m; sourceTree = "<group>"; };
+		CFDC06531343BFEF00303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CFDC065A1343BFF000303441 /* CounterBeansTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterBeansTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDC06621343BFF000303441 /* CounterBeansTests-Info.plist */ = {isa = PBXFileReference; path = "CounterBeansTests-Info.plist"; sourceTree = "<group>"; };
+		CFDC06641343BFF000303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFDC06661343BFF000303441 /* CounterBeansTests-Prefix.pch */ = {isa = PBXFileReference; path = "CounterBeansTests-Prefix.pch"; sourceTree = "<group>"; };
+		CFDC06671343BFF000303441 /* CounterBeansTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterBeansTests.h; sourceTree = "<group>"; };
+		CFDC06691343BFF000303441 /* CounterBeansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterBeansTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFDC06391343BFEF00303441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC06411343BFEF00303441 /* UIKit.framework in Frameworks */,
+				CFDC06431343BFEF00303441 /* Foundation.framework in Frameworks */,
+				CFDC06451343BFEF00303441 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDC06561343BFF000303441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC065B1343BFF000303441 /* UIKit.framework in Frameworks */,
+				CFDC065C1343BFF000303441 /* Foundation.framework in Frameworks */,
+				CFDC065D1343BFF000303441 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFDC06311343BFEF00303441 = {
+			isa = PBXGroup;
+			children = (
+				CFDC06461343BFEF00303441 /* CounterBeans */,
+				CFDC06601343BFF000303441 /* CounterBeansTests */,
+				CFDC063F1343BFEF00303441 /* Frameworks */,
+				CFDC063D1343BFEF00303441 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFDC063D1343BFEF00303441 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC063C1343BFEF00303441 /* CounterBeans.app */,
+				CFDC065A1343BFF000303441 /* CounterBeansTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFDC063F1343BFEF00303441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC06401343BFEF00303441 /* UIKit.framework */,
+				CFDC06421343BFEF00303441 /* Foundation.framework */,
+				CFDC06441343BFEF00303441 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFDC06461343BFEF00303441 /* CounterBeans */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC064F1343BFEF00303441 /* CounterBeansAppDelegate.h */,
+				CFDC06501343BFEF00303441 /* CounterBeansAppDelegate.m */,
+				CFDC06521343BFEF00303441 /* MainWindow.xib */,
+				CFDC06471343BFEF00303441 /* Supporting Files */,
+			);
+			path = CounterBeans;
+			sourceTree = "<group>";
+		};
+		CFDC06471343BFEF00303441 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC06481343BFEF00303441 /* CounterBeans-Info.plist */,
+				CFDC06491343BFEF00303441 /* InfoPlist.strings */,
+				CFDC064C1343BFEF00303441 /* CounterBeans-Prefix.pch */,
+				CFDC064D1343BFEF00303441 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFDC06601343BFF000303441 /* CounterBeansTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC06671343BFF000303441 /* CounterBeansTests.h */,
+				CFDC06691343BFF000303441 /* CounterBeansTests.m */,
+				CFDC06611343BFF000303441 /* Supporting Files */,
+			);
+			path = CounterBeansTests;
+			sourceTree = "<group>";
+		};
+		CFDC06611343BFF000303441 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC06621343BFF000303441 /* CounterBeansTests-Info.plist */,
+				CFDC06631343BFF000303441 /* InfoPlist.strings */,
+				CFDC06661343BFF000303441 /* CounterBeansTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFDC063B1343BFEF00303441 /* CounterBeans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDC066D1343BFF000303441 /* Build configuration list for PBXNativeTarget "CounterBeans" */;
+			buildPhases = (
+				CFDC06381343BFEF00303441 /* Sources */,
+				CFDC06391343BFEF00303441 /* Frameworks */,
+				CFDC063A1343BFEF00303441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterBeans;
+			productName = CounterBeans;
+			productReference = CFDC063C1343BFEF00303441 /* CounterBeans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFDC06591343BFF000303441 /* CounterBeansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDC06701343BFF000303441 /* Build configuration list for PBXNativeTarget "CounterBeansTests" */;
+			buildPhases = (
+				CFDC06551343BFF000303441 /* Sources */,
+				CFDC06561343BFF000303441 /* Frameworks */,
+				CFDC06571343BFF000303441 /* Resources */,
+				CFDC06581343BFF000303441 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFDC065F1343BFF000303441 /* PBXTargetDependency */,
+			);
+			name = CounterBeansTests;
+			productName = CounterBeansTests;
+			productReference = CFDC065A1343BFF000303441 /* CounterBeansTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFDC06331343BFEF00303441 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CFDC06361343BFEF00303441 /* Build configuration list for PBXProject "CounterBeans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFDC06311343BFEF00303441;
+			productRefGroup = CFDC063D1343BFEF00303441 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFDC063B1343BFEF00303441 /* CounterBeans */,
+				CFDC06591343BFF000303441 /* CounterBeansTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFDC063A1343BFEF00303441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC064B1343BFEF00303441 /* InfoPlist.strings in Resources */,
+				CFDC06541343BFEF00303441 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDC06571343BFF000303441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC06651343BFF000303441 /* InfoPlist.strings in Resources */,
+				CFDC06681343BFF000303441 /* CounterBeansTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFDC06581343BFF000303441 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFDC06381343BFEF00303441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC064E1343BFEF00303441 /* main.m in Sources */,
+				CFDC06511343BFEF00303441 /* CounterBeansAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDC06551343BFF000303441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDC066A1343BFF000303441 /* CounterBeansTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFDC065F1343BFF000303441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFDC063B1343BFEF00303441 /* CounterBeans */;
+			targetProxy = CFDC065E1343BFF000303441 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFDC06491343BFEF00303441 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFDC064A1343BFEF00303441 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFDC06521343BFEF00303441 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFDC06531343BFEF00303441 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CFDC06631343BFF000303441 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFDC06641343BFF000303441 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFDC066B1343BFF000303441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFDC066C1343BFF000303441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CFDC066E1343BFF000303441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CounterBeans/CounterBeans-Prefix.pch";
+				INFOPLIST_FILE = "CounterBeans/CounterBeans-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFDC066F1343BFF000303441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CounterBeans/CounterBeans-Prefix.pch";
+				INFOPLIST_FILE = "CounterBeans/CounterBeans-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFDC06711343BFF000303441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CounterBeans.app/CounterBeans";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CounterBeansTests/CounterBeansTests-Prefix.pch";
+				INFOPLIST_FILE = "CounterBeansTests/CounterBeansTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CFDC06721343BFF000303441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CounterBeans.app/CounterBeans";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CounterBeansTests/CounterBeansTests-Prefix.pch";
+				INFOPLIST_FILE = "CounterBeansTests/CounterBeansTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFDC06361343BFEF00303441 /* Build configuration list for PBXProject "CounterBeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDC066B1343BFF000303441 /* Debug */,
+				CFDC066C1343BFF000303441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDC066D1343BFF000303441 /* Build configuration list for PBXNativeTarget "CounterBeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDC066E1343BFF000303441 /* Debug */,
+				CFDC066F1343BFF000303441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFDC06701343BFF000303441 /* Build configuration list for PBXNativeTarget "CounterBeansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDC06711343BFF000303441 /* Debug */,
+				CFDC06721343BFF000303441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFDC06331343BFEF00303441 /* Project object */;
+}
