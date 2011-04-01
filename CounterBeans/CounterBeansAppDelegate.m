@@ -10,8 +10,10 @@
 
 @implementation CounterBeansAppDelegate
 
-
+@synthesize counterLabel = _counterLabel;
 @synthesize window=_window;
+
+int count = 0;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -62,7 +64,20 @@
 - (void)dealloc
 {
   [_window release];
+    [_counterLabel release];
     [super dealloc];
 }
 
+- (IBAction)countUpButton:(id)sender {
+  NSLog(@"count up pressed");
+  count++;
+  [_counterLabel setText:[NSString stringWithFormat:@"%d", count]];
+}
+
+- (IBAction)resetCountButton:(id)sender {
+  NSLog(@"reset button pressed");
+  count = 0;
+  [_counterLabel setText:[NSString stringWithFormat:@"%d", count]];
+
+}
 @end

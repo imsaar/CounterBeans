@@ -37,17 +37,17 @@
 		CFDC06401343BFEF00303441 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFDC06421343BFEF00303441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFDC06441343BFEF00303441 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CFDC06481343BFEF00303441 /* CounterBeans-Info.plist */ = {isa = PBXFileReference; path = "CounterBeans-Info.plist"; sourceTree = "<group>"; };
+		CFDC06481343BFEF00303441 /* CounterBeans-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CounterBeans-Info.plist"; sourceTree = "<group>"; };
 		CFDC064A1343BFEF00303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CFDC064C1343BFEF00303441 /* CounterBeans-Prefix.pch */ = {isa = PBXFileReference; path = "CounterBeans-Prefix.pch"; sourceTree = "<group>"; };
+		CFDC064C1343BFEF00303441 /* CounterBeans-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CounterBeans-Prefix.pch"; sourceTree = "<group>"; };
 		CFDC064D1343BFEF00303441 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFDC064F1343BFEF00303441 /* CounterBeansAppDelegate.h */ = {isa = PBXFileReference; path = CounterBeansAppDelegate.h; sourceTree = "<group>"; };
+		CFDC064F1343BFEF00303441 /* CounterBeansAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterBeansAppDelegate.h; sourceTree = "<group>"; };
 		CFDC06501343BFEF00303441 /* CounterBeansAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterBeansAppDelegate.m; sourceTree = "<group>"; };
 		CFDC06531343BFEF00303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		CFDC065A1343BFF000303441 /* CounterBeansTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterBeansTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFDC06621343BFF000303441 /* CounterBeansTests-Info.plist */ = {isa = PBXFileReference; path = "CounterBeansTests-Info.plist"; sourceTree = "<group>"; };
+		CFDC06621343BFF000303441 /* CounterBeansTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CounterBeansTests-Info.plist"; sourceTree = "<group>"; };
 		CFDC06641343BFF000303441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CFDC06661343BFF000303441 /* CounterBeansTests-Prefix.pch */ = {isa = PBXFileReference; path = "CounterBeansTests-Prefix.pch"; sourceTree = "<group>"; };
+		CFDC06661343BFF000303441 /* CounterBeansTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CounterBeansTests-Prefix.pch"; sourceTree = "<group>"; };
 		CFDC06671343BFF000303441 /* CounterBeansTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterBeansTests.h; sourceTree = "<group>"; };
 		CFDC06691343BFF000303441 /* CounterBeansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterBeansTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,7 +311,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -325,7 +325,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -343,6 +343,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CounterBeans/CounterBeans-Prefix.pch";
 				INFOPLIST_FILE = "CounterBeans/CounterBeans-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -356,6 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CounterBeans/CounterBeans-Prefix.pch";
 				INFOPLIST_FILE = "CounterBeans/CounterBeans-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
