@@ -11,11 +11,15 @@
 @interface CounterBeansAppDelegate : NSObject <UIApplicationDelegate> {
   UILabel *_counterLabel;
   int count;
+  UITextField *_targetCount;
+  UILabel *_lastCount;
 }
 
 - (IBAction)countUpButton:(id)sender;
 - (IBAction)resetCountButton:(id)sender;
 @property (nonatomic, retain) IBOutlet UILabel *counterLabel;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITextField *targetCount;
+@property (nonatomic, retain) IBOutlet UILabel *lastCount;
 
 @end

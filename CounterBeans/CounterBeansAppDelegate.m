@@ -12,6 +12,8 @@
 
 @synthesize counterLabel = _counterLabel;
 @synthesize window=_window;
+@synthesize targetCount = _targetCount;
+@synthesize lastCount = _lastCount;
 
 int count = 0;
 
@@ -65,6 +67,8 @@ int count = 0;
 {
   [_window release];
     [_counterLabel release];
+    [_targetCount release];
+    [_lastCount release];
     [super dealloc];
 }
 
@@ -76,6 +80,7 @@ int count = 0;
 
 - (IBAction)resetCountButton:(id)sender {
   NSLog(@"reset button pressed");
+  self.lastCount.text = self.counterLabel.text;
   count = 0;
   [_counterLabel setText:[NSString stringWithFormat:@"%d", count]];
 
