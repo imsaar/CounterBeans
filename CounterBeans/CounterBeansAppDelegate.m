@@ -15,10 +15,13 @@
 @synthesize targetCount = _targetCount;
 @synthesize lastCount = _lastCount;
 
-int count = 0;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  targetCountValue = 33;  
+  countValue = 0;
+  self.targetCount.text = [NSString stringWithFormat:@"%d", targetCountValue];
+
   // Override point for customization after application launch.
   [self.window makeKeyAndVisible];
     return YES;
@@ -74,15 +77,46 @@ int count = 0;
 
 - (IBAction)countUpButton:(id)sender {
   NSLog(@"count up pressed");
-  count++;
-  [_counterLabel setText:[NSString stringWithFormat:@"%d", count]];
+  countValue++;
+  int difference = targetCountValue - countValue;
+  switch (difference) {
+    case 0:
+      [self alertDone];
+      break;
+    case 3:
+      [self vibrateOrBeep];
+      break;
+    default:
+      break;
+  }
+   [_counterLabel setText:[NSString stringWithFormat:@"%d", countValue]];
+}
+
+- (void)vibrateOrBeep {
+  AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
+- (void)alertDone {
+  UIAlertView *alert = [[UIAlertView alloc]
+                        initWithTitle:@"Target Achieved"
+                        message:nil
+                        delegate:nil
+                        cancelButtonTitle:nil
+                        otherButtonTitles:@"OK", nil];
+  [alert show];
+  [alert autorelease];
 }
 
 - (IBAction)resetCountButton:(id)sender {
   NSLog(@"reset button pressed");
   self.lastCount.text = self.counterLabel.text;
-  count = 0;
-  [_counterLabel setText:[NSString stringWithFormat:@"%d", count]];
+  countValue = 0;
+  [_counterLabel setText:[NSString stringWithFormat:@"%d", countValue]];
 
+}
+- (IBAction)saveTargetCount:(id)sender {
+  targetCountValue = [self.targetCount.text intValue];
+  [self resetCountButton:self];
+  [self.targetCount resignFirstResponder];
 }
 @end

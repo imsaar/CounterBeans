@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface CounterBeansAppDelegate : NSObject <UIApplicationDelegate> {
   UILabel *_counterLabel;
-  int count;
+  int countValue;
+  int targetCountValue;
   UITextField *_targetCount;
   UILabel *_lastCount;
 }
@@ -21,5 +23,8 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITextField *targetCount;
 @property (nonatomic, retain) IBOutlet UILabel *lastCount;
+- (IBAction)saveTargetCount:(id)sender;
+- (void)alertDone;
+- (void)vibrateOrBeep;
 
 @end
