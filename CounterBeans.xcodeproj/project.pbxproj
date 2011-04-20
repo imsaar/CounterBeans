@@ -20,6 +20,10 @@
 		CFDC06651343BFF000303441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06631343BFF000303441 /* InfoPlist.strings */; };
 		CFDC06681343BFF000303441 /* CounterBeansTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CFDC06671343BFF000303441 /* CounterBeansTests.h */; };
 		CFDC066A1343BFF000303441 /* CounterBeansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDC06691343BFF000303441 /* CounterBeansTests.m */; };
+		CFDEB6FE134FEA1900D0C19D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDEB6FD134FEA1900D0C19D /* AudioToolbox.framework */; };
+		CFDEB703134FEC2900D0C19D /* imsaar.icns in Resources */ = {isa = PBXBuildFile; fileRef = CFDEB702134FEC2900D0C19D /* imsaar.icns */; };
+		CFDEB705134FECA500D0C19D /* ali_small_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFDEB704134FECA500D0C19D /* ali_small_portrait.jpg */; };
+		CFF61A17135F9186006F021C /* tasbeeh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF61A16135F9186006F021C /* tasbeeh.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		CFDC06661343BFF000303441 /* CounterBeansTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CounterBeansTests-Prefix.pch"; sourceTree = "<group>"; };
 		CFDC06671343BFF000303441 /* CounterBeansTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterBeansTests.h; sourceTree = "<group>"; };
 		CFDC06691343BFF000303441 /* CounterBeansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterBeansTests.m; sourceTree = "<group>"; };
+		CFDEB6FD134FEA1900D0C19D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CFDEB702134FEC2900D0C19D /* imsaar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = imsaar.icns; sourceTree = "<group>"; };
+		CFDEB704134FECA500D0C19D /* ali_small_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ali_small_portrait.jpg; sourceTree = "<group>"; };
+		CFF61A16135F9186006F021C /* tasbeeh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tasbeeh.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDEB6FE134FEA1900D0C19D /* AudioToolbox.framework in Frameworks */,
 				CFDC06411343BFEF00303441 /* UIKit.framework in Frameworks */,
 				CFDC06431343BFEF00303441 /* Foundation.framework in Frameworks */,
 				CFDC06451343BFEF00303441 /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +107,7 @@
 		CFDC063F1343BFEF00303441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFDEB6FD134FEA1900D0C19D /* AudioToolbox.framework */,
 				CFDC06401343BFEF00303441 /* UIKit.framework */,
 				CFDC06421343BFEF00303441 /* Foundation.framework */,
 				CFDC06441343BFEF00303441 /* CoreGraphics.framework */,
@@ -119,6 +129,9 @@
 		CFDC06471343BFEF00303441 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFF61A16135F9186006F021C /* tasbeeh.jpg */,
+				CFDEB704134FECA500D0C19D /* ali_small_portrait.jpg */,
+				CFDEB702134FEC2900D0C19D /* imsaar.icns */,
 				CFDC06481343BFEF00303441 /* CounterBeans-Info.plist */,
 				CFDC06491343BFEF00303441 /* InfoPlist.strings */,
 				CFDC064C1343BFEF00303441 /* CounterBeans-Prefix.pch */,
@@ -216,6 +229,9 @@
 			files = (
 				CFDC064B1343BFEF00303441 /* InfoPlist.strings in Resources */,
 				CFDC06541343BFEF00303441 /* MainWindow.xib in Resources */,
+				CFDEB703134FEC2900D0C19D /* imsaar.icns in Resources */,
+				CFDEB705134FECA500D0C19D /* ali_small_portrait.jpg in Resources */,
+				CFF61A17135F9186006F021C /* tasbeeh.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +443,7 @@
 				CFDC066F1343BFF000303441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFDC06701343BFF000303441 /* Build configuration list for PBXNativeTarget "CounterBeansTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +452,7 @@
 				CFDC06721343BFF000303441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

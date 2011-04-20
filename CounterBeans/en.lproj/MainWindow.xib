@@ -78,7 +78,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ali_small_portrait.jpg</string>
+							<string key="NSResourceName">tasbeeh.jpg</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="434128650">
@@ -517,8 +517,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">ali_small_portrait.jpg</string>
-			<string key="NS.object.0">{97, 96}</string>
+			<string key="NS.key.0">tasbeeh.jpg</string>
+			<string key="NS.object.0">{291, 289}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
 	</data>

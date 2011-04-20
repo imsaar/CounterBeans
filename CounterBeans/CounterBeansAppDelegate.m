@@ -22,6 +22,12 @@
   countValue = 0;
   self.targetCount.text = [NSString stringWithFormat:@"%d", targetCountValue];
 
+  NSLog(@"Monitoring accelerometer");
+  UIAccelerometer *aMeter = [UIAccelerometer sharedAccelerometer];
+  
+  [aMeter setUpdateInterval:0.5];
+  [aMeter setDelegate:self];
+  
   // Override point for customization after application launch.
   [self.window makeKeyAndVisible];
     return YES;
@@ -100,20 +106,38 @@
   UIAlertView *alert = [[UIAlertView alloc]
                         initWithTitle:@"Target Achieved"
                         message:nil
-                        delegate:nil
+                        delegate:self
                         cancelButtonTitle:nil
                         otherButtonTitles:@"OK", nil];
+  [self vibrateOrBeep];
   [alert show];
   [alert autorelease];
 }
 
 - (IBAction)resetCountButton:(id)sender {
-  NSLog(@"reset button pressed");
+  NSLog(@"counter resetted");
   self.lastCount.text = self.counterLabel.text;
   countValue = 0;
   [_counterLabel setText:[NSString stringWithFormat:@"%d", countValue]];
 
 }
+
+- (void) accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)accel 
+{
+  float accelX = [accel x];
+  float accelY = [accel y];
+  NSLog(@"x = %f, y = %f, z = %f", accelX, accelY, [accel z]);
+  if (accelX >= 1.0 || accelY >= 1.0) {
+    [self resetCountButton:self];
+  }
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+  NSLog(@"alertView button clicked");
+  [self resetCountButton:self];
+}
+
 - (IBAction)saveTargetCount:(id)sender {
   targetCountValue = [self.targetCount.text intValue];
   [self resetCountButton:self];

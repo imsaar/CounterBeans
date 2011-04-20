@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-@interface CounterBeansAppDelegate : NSObject <UIApplicationDelegate> {
+@interface CounterBeansAppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate, UIAlertViewDelegate> {
   UILabel *_counterLabel;
   int countValue;
   int targetCountValue;
